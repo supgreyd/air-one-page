@@ -299,7 +299,7 @@
 
 <div class="mask"></div>
            
-<script async>
+<script>
             var widgetOptions = {
                 widget_id: 364,
                 survey_id: 466,
@@ -308,12 +308,13 @@
                 avatar: '/uploads/img/bots/25/1559293758.jpg'
             };
 
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.async = true;
-            script.src = 'https://dev.surveybot.me/js/lib/surveybot.widget.js';
-            document.getElementsByTagName('head')[0].appendChild(script);
-           
+            (function() {
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = 'https://dev.surveybot.me/js/lib/surveybot.widget.js';
+                document.getElementsByTagName('head')[0].appendChild(script);
+            })();
 </script>
     
 </body>
